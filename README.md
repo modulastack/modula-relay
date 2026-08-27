@@ -82,8 +82,8 @@ track of the `msg_id`.
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/relay-loop-dark.svg">
-    <img src="assets/relay-loop-light.svg" alt="Two agents in one pool: dispatch queues at the peer, the await loop hands it over, the reply comes back, both agents resume waiting" width="820">
+    <source media="(prefers-color-scheme: dark)" srcset="assets/relay-loop-dark.png">
+    <img src="assets/relay-loop-light.png" alt="Two agents in one pool: dispatch queues at the peer, the await loop hands it over, the reply comes back, both agents resume waiting" width="820">
   </picture>
 </p>
 
