@@ -1,9 +1,7 @@
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/modula-logo-dark-theme.svg">
-    <img src="assets/modula-logo-light-theme.svg" alt="Modula" width="340">
-  </picture>
-</p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/modula-logo-dark-theme.svg">
+  <img src="assets/modula-logo-light-theme.svg" alt="Modula" width="230">
+</picture>
 
 # Modula Relay
 
