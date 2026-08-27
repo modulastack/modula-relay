@@ -1,6 +1,6 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/modula-logo-dark-theme.svg">
-  <img src="assets/modula-logo-light-theme.svg" alt="Modula" width="230">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/modula-mark-dark-theme.svg">
+  <img src="assets/modula-mark-light-theme.svg" alt="Modula" width="60">
 </picture>
 
 # Modula Relay
