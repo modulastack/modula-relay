@@ -13,10 +13,7 @@ under different harnesses, both working the same task. It runs on your machine. 
 no cloud.
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/relay-loop-dark.svg">
-    <img src="assets/relay-loop-light.svg" alt="Two agents in one pool: dispatch queues at the peer, the await loop hands it over, the reply comes back, both agents resume waiting" width="820">
-  </picture>
+  <img src="assets/demo.gif" alt="A terminal session: setup arms the folder, then a coder and a verifier agent exchange a review request and reply over the relay" width="820">
 </p>
 
 ## Install
@@ -82,6 +79,13 @@ exchange, so for an ongoing conversation, give each agent the loop once:
 The loop covers the sending side too. A reply to a request you dispatched shows up in the
 same await, so an agent that stays in its loop still gets its answers even if it lost
 track of the `msg_id`.
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/relay-loop-dark.svg">
+    <img src="assets/relay-loop-light.svg" alt="Two agents in one pool: dispatch queues at the peer, the await loop hands it over, the reply comes back, both agents resume waiting" width="820">
+  </picture>
+</p>
 
 **Match the loop to your harness.** Harnesses handle your typing differently while an
 agent is mid-turn. Codex picks it up within seconds, so a continuous loop is fine there.
