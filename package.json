@@ -1,0 +1,45 @@
+{
+  "name": "@modulastack/relay",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Modula Relay \u2014 the cross-model team messaging protocol core.",
+  "license": "Apache-2.0",
+  "author": "ModulaStack",
+  "homepage": "https://modulastack.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/modulastack/modula-relay"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "bin": {
+    "modula-relay": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "examples",
+    "SPEC.md",
+    "SECURITY.md",
+    "NOTICE"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "build": "tsc -p tsconfig.json",
+    "prepack": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  }
+}

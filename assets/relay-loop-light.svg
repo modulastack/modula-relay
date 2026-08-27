@@ -1,0 +1,46 @@
+<svg width="960" height="330" viewBox="0 0 960 330" fill="none" xmlns="http://www.w3.org/2000/svg" font-family="Archivo, 'Instrument Sans', ui-sans-serif, system-ui, sans-serif">
+  <!-- pool chip -->
+  <rect x="330" y="14" width="300" height="34" rx="17" fill="#EFEDE8" stroke="#D6D2C9"/>
+  <circle cx="354" cy="31" r="4" fill="#7E9147"/>
+  <text x="368" y="36" font-size="14" fill="#302F2A">~/your-project · one pool</text>
+
+  <!-- coder card -->
+  <rect x="60" y="92" width="220" height="96" rx="14" fill="#F2F0EB" stroke="#D6D2C9"/>
+  <circle cx="88" cy="126" r="5" fill="#7E9147"/>
+  <text x="102" y="131" font-size="19" font-weight="600" fill="#1A1A1A">coder</text>
+  <text x="102" y="154" font-size="13" fill="#6B675E">Claude · any MCP harness</text>
+
+  <!-- verifier card -->
+  <rect x="680" y="92" width="220" height="96" rx="14" fill="#F2F0EB" stroke="#D6D2C9"/>
+  <circle cx="708" cy="126" r="5" fill="#7E9147"/>
+  <text x="722" y="131" font-size="19" font-weight="600" fill="#1A1A1A">verifier</text>
+  <text x="722" y="154" font-size="13" fill="#6B675E">GPT · any MCP harness</text>
+
+  <!-- dispatch arrow -->
+  <path d="M292 118 H656" stroke="#7E9147" stroke-width="2"/>
+  <path d="M656 118 l-9 -5 v10 z" fill="#7E9147"/>
+  <text x="474" y="106" font-size="13" text-anchor="middle" fill="#302F2A" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">relay_dispatch · "review utils.py"</text>
+  <text x="474" y="134" font-size="12" text-anchor="middle" fill="#8B867B">queues at the peer until it awaits</text>
+
+  <!-- reply arrow -->
+  <path d="M668 166 H304" stroke="#302F2A" stroke-width="2"/>
+  <path d="M304 166 l9 -5 v10 z" fill="#302F2A"/>
+  <text x="486" y="187" font-size="13" text-anchor="middle" fill="#302F2A" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">relay_reply · "2 issues found"</text>
+
+  <!-- await loops under each card -->
+  <g stroke="#7E9147" stroke-width="2" fill="none">
+    <path d="M150 232 a20 20 0 1 1 40 0 a20 20 0 0 1 -34 14"/>
+    <path d="M770 232 a20 20 0 1 1 40 0 a20 20 0 0 1 -34 14"/>
+  </g>
+  <path d="M156 246 l-8 -1 5 -7 z" fill="#7E9147"/>
+  <path d="M776 246 l-8 -1 5 -7 z" fill="#7E9147"/>
+  <text x="170" y="286" font-size="13" text-anchor="middle" fill="#302F2A">await loop</text>
+  <text x="790" y="286" font-size="13" text-anchor="middle" fill="#302F2A">await loop</text>
+
+  <!-- caption -->
+  <text x="480" y="252" font-size="14" text-anchor="middle" fill="#1A1A1A" font-weight="600">await → handle → reply → await</text>
+  <text x="480" y="274" font-size="13" text-anchor="middle" fill="#6B675E">every agent stays in its loop, so every message finds a listener</text>
+
+  <!-- footer facts -->
+  <text x="480" y="314" font-size="12" text-anchor="middle" fill="#8B867B">Unix sockets on your machine · no broker · no network · the folder is the pool</text>
+</svg>
